@@ -1,0 +1,89 @@
+.wordle-game {
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 25rem;
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+
+.wordle-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.wordle-grid-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.wordle-grid-cell {
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: 0.1rem solid silver;
+}
+
+.wordle-grid-cell.correct {
+    background-color: darkgreen;
+    color: white;
+}
+
+.wordle-grid-cell.present {
+    background-color: darkorange;
+    color: white;
+}
+
+.wordle-grid-cell.absent {
+    background-color: darkgray;
+    color: white;
+}
+
+.wordle-grid-cell.empty {
+    background-color: white;
+    color: black;
+}
+
+.wordle-keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.wordle-keyboard-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wordle-keyboard-button {
+    font-weight: bold;
+    text-align: center;
+    min-width: 2rem;
+    min-height: 2rem;
+    border-radius: 15%;
+}
+
+.wordle-keyboard-button.default {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.wordle-keyboard-button.delete {
+    background-color: darkred;
+    color: white;
+}
+
+.wordle-keyboard-button.submit {
+    background-color: darkgreen;
+    color: white;
+}
